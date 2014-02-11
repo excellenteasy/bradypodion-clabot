@@ -1,7 +1,7 @@
 {
   "name": "bradypodion-clabot",
   "description": "CLAbot that watches bradypodion pull requests",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/excellenteasy/bradypodion-clabot",
   "author": {
     "name": "David Pfahler",
