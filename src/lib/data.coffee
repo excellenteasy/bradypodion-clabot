@@ -25,8 +25,8 @@ exports.save = (req, res) ->
       if update
         db.save update.id, _.extend(update.value, form), (err, dbres) ->
           if err
-            console.log   err
             console.log   'Database Error'
+            console.log   err
             res.send 500, 'Database Error'
           else
             console.log   'Submission Saved'
@@ -34,8 +34,8 @@ exports.save = (req, res) ->
       else
         db.save form, (err, dbres) ->
           if err
-            console.log    err
             console.log   'Database Error'
+            console.log    err
             res.send 500, 'Database Error'
           else
             console.log   'Submission Saved'
@@ -45,6 +45,7 @@ exports.getContractors = (callback) ->
   db.view 'contractors/github', (err, docs) ->
     if err
       console.log 'Database Error'
+      console.log 'err'
       callback []
     else
       callback(_.pluck(docs, 'key'))
