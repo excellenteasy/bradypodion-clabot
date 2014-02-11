@@ -1,3 +1,3 @@
-# clabot-sample
+# clabot for bradypodion
 
-> This is a sample clabot implementation powering the sandbox
+> This clabot instance is watching pull-requests for bradypodion.
