@@ -41,3 +41,7 @@ port = process.env.PORT or 1337
 
 app.listen port
 console.log "Listening on #{port}"
+
+# debugging
+process.on 'uncaughtException', (err) ->
+  console.log 'Caught exception: ' + err
