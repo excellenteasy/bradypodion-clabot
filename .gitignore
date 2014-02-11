@@ -6,3 +6,5 @@ tmp
 
 !assets/js/lib/*.js
 !assets/js/*.js
+
+.env
