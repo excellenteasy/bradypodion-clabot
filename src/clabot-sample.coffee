@@ -25,7 +25,7 @@ app.get '/form/:project/:kind?', (req, res) ->
   # Makes no sense, yet. Extensible in the future.
   if project isnt 'clabot' then project = 'clabot'
   kind    = req.params.kind?.toLowerCase()
-  kind    = kind.charAt(0).toUpperCase() + kind.slice 1
+  kind    = kind.charAt(0).toUpperCase() + kind.slice 1 if kind
   if kind isnt 'Entity' then kind = 'Individual'
 
   res.render 'form.jade',
