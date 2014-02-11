@@ -10,7 +10,7 @@ app = require('clabot').createApp
   getContractors: data.getContractors
   token: process.env.GITHUB_TOKEN
   templateData:
-    link: 'http://clabot.github.com/individual.html'
+    link: 'https://github.com/excellenteasy/bradypodion/blob/master/CONTRIBUTORS_LICENSE_AGREEMENT.md'
     maintainer: 'boennemann'
   secrets:
     excellenteasy:
@@ -36,6 +36,8 @@ app.get '/form/:project/:kind?', (req, res) ->
     url      : req.clabotOptions.templateData.link
 
 app.post '/form', validate, data.save
+
+app.use '/form/bradypodion', express.static('./assets')
 
 port = process.env.PORT or 1337
 
