@@ -2,7 +2,10 @@
 
 express = require 'express'
 jade    = require 'jade'
+fs      = require 'fs'
 
+signedTemplate = fs.readFileSync __dirname+'/templates/alreadySigned.jst'
+notSignedTemplate = fs.readFileSync __dirname+'/templates/notYetSigned.jst'
 data     = require './lib/data'
 validate = require './lib/validate'
 
@@ -12,6 +15,10 @@ app = require('clabot').createApp
   templateData:
     link: 'https://github.com/excellenteasy/bradypodion/blob/master/CONTRIBUTORS_LICENSE_AGREEMENT.md'
     maintainer: 'boennemann'
+    image: false
+  templates:
+    alreadySigned: signedTemplate
+    notYetSigned: notSignedTemplate
   secrets:
     excellenteasy:
       bradypodion: process.env.HUB_SECRET
