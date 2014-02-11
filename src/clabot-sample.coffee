@@ -13,7 +13,7 @@ app = require('clabot').createApp
   getContractors: data.getContractors
   token: process.env.GITHUB_TOKEN
   templateData:
-    link: 'https://github.com/excellenteasy/bradypodion/blob/master/CONTRIBUTORS_LICENSE_AGREEMENT.md'
+    link: 'https://github.com/excellenteasy/bradypodion/blob/master/CONTRIBUTOR_LICENSE_AGREEMENTS.md'
     maintainer: 'boennemann'
     image: false
   templates:
