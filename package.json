@@ -1,24 +1,24 @@
 {
-  "name": "clabot-sample",
-  "description": "This is a sample clabot implementation powering the sandbox",
+  "name": "bradypodion-clabot",
+  "description": "CLAbot that watches bradypodion pull requests",
   "version": "0.0.0",
-  "homepage": "https://github.com/clabot/clabot",
+  "homepage": "https://github.com/excellenteasy/bradypodion-clabot",
   "author": {
-    "name": "Stephan Bönnemann",
-    "email": "clabot@excellenteasy.com",
+    "name": "David Pfahler",
+    "email": "david@excellenteasy.com",
     "url": "http://excellenteasy.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/clabot/sample.git"
+    "url": "git://github.com/excellenteasy/bradypodion-clabot.git"
   },
   "bugs": {
-    "url": "https://github.com/clabot/sample/issues"
+    "url": "https://github.com/excellenteasy/bradypodion-clabot/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/clabot/sample/blob/master/LICENSE"
+      "url": "https://github.com/excellenteasy/bradypodion-clabot/blob/master/LICENSE"
     }
   ],
   "main": "src/clabot-sample.js",
